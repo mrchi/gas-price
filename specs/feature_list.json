@@ -1,0 +1,59 @@
+{
+  "project_name": "油价展示Web应用",
+  "features": [
+    {
+      "id": 1,
+      "name": "北京地区当前92/95/98号汽油价格展示",
+      "description": "在页面顶部展示当前最新的各标号汽油价格和涨跌幅",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "name": "过去一年国内成品油价格历史趋势折线图",
+      "description": "用折线图展示过去一年的成品油价格变化趋势",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "name": "涨跌幅颜色标识",
+      "description": "上涨用红色、下跌用绿色、持平用灰色展示涨跌幅",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "name": "成品油类型切换显示",
+      "description": "支持切换显示/隐藏不同标号的成品油价格曲线",
+      "status": "completed"
+    },
+    {
+      "id": 5,
+      "name": "布伦特原油当前价格展示",
+      "description": "在当前价格区域新增布伦特原油价格卡片",
+      "status": "completed"
+    },
+    {
+      "id": 6,
+      "name": "布伦特原油历史价格趋势展示",
+      "description": "在折线图中添加布伦特原油价格曲线，与成品油同图对比",
+      "status": "completed"
+    },
+    {
+      "id": 7,
+      "name": "双Y轴支持",
+      "description": "左侧Y轴展示成品油价格（元/升），右侧Y轴展示原油价格（美元/桶）",
+      "status": "completed"
+    },
+    {
+      "id": 8,
+      "name": "原油价格涨跌幅自动计算",
+      "description": "前端自动计算原油价格的涨跌值和涨跌幅百分比",
+      "status": "completed"
+    },
+    {
+      "id": 9,
+      "name": "原油价格显示/隐藏开关",
+      "description": "支持独立控制布伦特原油价格曲线的显示和隐藏",
+      "status": "completed"
+    }
+  ]
+}

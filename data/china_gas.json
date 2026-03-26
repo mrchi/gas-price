@@ -1,0 +1,380 @@
+{
+  "province": "北京",
+  "price_history": [
+    {
+      "update_time": "2026-03-24 00:00:00",
+      "gas_92": {
+        "price": 8.57,
+        "change": 0.93
+      },
+      "gas_95": {
+        "price": 9.12,
+        "change": 0.99
+      },
+      "gas_98": {
+        "price": 10.62,
+        "change": 0.99
+      }
+    },
+    {
+      "update_time": "2026-03-10 00:00:00",
+      "gas_92": {
+        "price": 7.64,
+        "change": 0.56
+      },
+      "gas_95": {
+        "price": 8.13,
+        "change": 0.6
+      },
+      "gas_98": {
+        "price": 9.63,
+        "change": 0.6
+      }
+    },
+    {
+      "update_time": "2026-02-25 00:00:00",
+      "gas_92": {
+        "price": 7.08,
+        "change": 0.14
+      },
+      "gas_95": {
+        "price": 7.53,
+        "change": 0.14
+      },
+      "gas_98": {
+        "price": 9.03,
+        "change": 0.14
+      }
+    },
+    {
+      "update_time": "2026-02-04 00:00:00",
+      "gas_92": {
+        "price": 6.94,
+        "change": 0.17
+      },
+      "gas_95": {
+        "price": 7.39,
+        "change": 0.18
+      },
+      "gas_98": {
+        "price": 8.89,
+        "change": 0.18
+      }
+    },
+    {
+      "update_time": "2026-01-21 00:00:00",
+      "gas_92": {
+        "price": 6.77,
+        "change": 0.07
+      },
+      "gas_95": {
+        "price": 7.21,
+        "change": 0.07
+      },
+      "gas_98": {
+        "price": 8.71,
+        "change": 0.07
+      }
+    },
+    {
+      "update_time": "2026-01-07 00:00:00",
+      "gas_92": {
+        "price": 6.7,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.14,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 8.64,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-12-23 00:00:00",
+      "gas_92": {
+        "price": 6.7,
+        "change": -0.14
+      },
+      "gas_95": {
+        "price": 7.14,
+        "change": -0.14
+      },
+      "gas_98": {
+        "price": 8.64,
+        "change": -0.14
+      }
+    },
+    {
+      "update_time": "2025-12-09 00:00:00",
+      "gas_92": {
+        "price": 6.84,
+        "change": -0.05
+      },
+      "gas_95": {
+        "price": 7.28,
+        "change": -0.05
+      },
+      "gas_98": {
+        "price": 8.78,
+        "change": -0.05
+      }
+    },
+    {
+      "update_time": "2025-11-25 00:00:00",
+      "gas_92": {
+        "price": 6.89,
+        "change": -0.05
+      },
+      "gas_95": {
+        "price": 7.33,
+        "change": -0.06
+      },
+      "gas_98": {
+        "price": 8.83,
+        "change": -0.06
+      }
+    },
+    {
+      "update_time": "2025-11-11 00:00:00",
+      "gas_92": {
+        "price": 6.94,
+        "change": 0.1
+      },
+      "gas_95": {
+        "price": 7.39,
+        "change": 0.11
+      },
+      "gas_98": {
+        "price": 8.89,
+        "change": 0.11
+      }
+    },
+    {
+      "update_time": "2025-10-28 00:00:00",
+      "gas_92": {
+        "price": 6.84,
+        "change": -0.21
+      },
+      "gas_95": {
+        "price": 7.28,
+        "change": -0.23
+      },
+      "gas_98": {
+        "price": 8.78,
+        "change": -0.23
+      }
+    },
+    {
+      "update_time": "2025-10-14 00:00:00",
+      "gas_92": {
+        "price": 7.05,
+        "change": -0.06
+      },
+      "gas_95": {
+        "price": 7.51,
+        "change": -0.06
+      },
+      "gas_98": {
+        "price": 9.01,
+        "change": -0.06
+      }
+    },
+    {
+      "update_time": "2025-09-24 00:00:00",
+      "gas_92": {
+        "price": 7.11,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.57,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 9.07,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-09-10 00:00:00",
+      "gas_92": {
+        "price": 7.11,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.57,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 9.07,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-08-27 00:00:00",
+      "gas_92": {
+        "price": 7.11,
+        "change": -0.15
+      },
+      "gas_95": {
+        "price": 7.57,
+        "change": -0.16
+      },
+      "gas_98": {
+        "price": 9.07,
+        "change": -0.16
+      }
+    },
+    {
+      "update_time": "2025-08-13 00:00:00",
+      "gas_92": {
+        "price": 7.26,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.73,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 9.23,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-07-30 00:00:00",
+      "gas_92": {
+        "price": 7.26,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.73,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 9.23,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-07-16 00:00:00",
+      "gas_92": {
+        "price": 7.26,
+        "change": -0.1
+      },
+      "gas_95": {
+        "price": 7.73,
+        "change": -0.11
+      },
+      "gas_98": {
+        "price": 9.23,
+        "change": -0.11
+      }
+    },
+    {
+      "update_time": "2025-07-02 00:00:00",
+      "gas_92": {
+        "price": 7.36,
+        "change": 0.19
+      },
+      "gas_95": {
+        "price": 7.84,
+        "change": 0.2
+      },
+      "gas_98": {
+        "price": 9.34,
+        "change": 0.2
+      }
+    },
+    {
+      "update_time": "2025-06-18 00:00:00",
+      "gas_92": {
+        "price": 7.17,
+        "change": 0.2
+      },
+      "gas_95": {
+        "price": 7.64,
+        "change": 0.22
+      },
+      "gas_98": {
+        "price": 9.14,
+        "change": 0.22
+      }
+    },
+    {
+      "update_time": "2025-06-04 00:00:00",
+      "gas_92": {
+        "price": 6.97,
+        "change": 0.06
+      },
+      "gas_95": {
+        "price": 7.42,
+        "change": 0.06
+      },
+      "gas_98": {
+        "price": 8.92,
+        "change": 0.06
+      }
+    },
+    {
+      "update_time": "2025-05-20 00:00:00",
+      "gas_92": {
+        "price": 6.91,
+        "change": -0.19
+      },
+      "gas_95": {
+        "price": 7.36,
+        "change": -0.2
+      },
+      "gas_98": {
+        "price": 8.86,
+        "change": -0.2
+      }
+    },
+    {
+      "update_time": "2025-05-01 00:00:00",
+      "gas_92": {
+        "price": 7.1,
+        "change": 0.0
+      },
+      "gas_95": {
+        "price": 7.56,
+        "change": 0.0
+      },
+      "gas_98": {
+        "price": 9.06,
+        "change": 0.0
+      }
+    },
+    {
+      "update_time": "2025-04-18 00:00:00",
+      "gas_92": {
+        "price": 7.1,
+        "change": -0.38
+      },
+      "gas_95": {
+        "price": 7.56,
+        "change": -0.41
+      },
+      "gas_98": {
+        "price": 9.06,
+        "change": -0.41
+      }
+    },
+    {
+      "update_time": "2025-04-03 00:00:00",
+      "gas_92": {
+        "price": 7.48,
+        "change": 0
+      },
+      "gas_95": {
+        "price": 7.97,
+        "change": 0
+      },
+      "gas_98": {
+        "price": 9.47,
+        "change": 0
+      }
+    }
+  ]
+}
