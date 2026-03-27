@@ -345,6 +345,25 @@
             document.getElementById('price-chart').classList.remove('hidden');
             document.querySelector('#chart-container > div').classList.add('hidden');
 
+            // 计算双轴校准所需的最值
+            const allGasPrices = reversedHistory.flatMap(item => [item.gas_92.price, item.gas_95.price, item.gas_98.price]);
+            const minGas = Math.min(...allGasPrices);
+            const maxGas = Math.max(...allGasPrices);
+            const allCrudePrices = reversedCrudeHistory.map(item => item.price).filter(p => p !== null);
+            const minCrude = Math.min(...allCrudePrices);
+            const maxCrude = Math.max(...allCrudePrices);
+
+            // 计算相对变化范围，让相同百分比变化对应相同高度
+            const gasRelativeRange = (maxGas - minGas) / minGas;
+            const crudeRelativeRange = (maxCrude - minCrude) / minCrude;
+            const maxRelativeRange = Math.max(gasRelativeRange, crudeRelativeRange) * 1.1; // 留10%余量
+
+            // 计算轴的上下限，底部留5%余量
+            const gasMin = minGas * 0.95;
+            const gasMax = minGas * (1 + maxRelativeRange);
+            const crudeMin = minCrude * 0.95;
+            const crudeMax = minCrude * (1 + maxRelativeRange);
+
             // 创建新图表
             chart = new Chart(ctx, {
                 type: 'line',
@@ -511,6 +530,8 @@
                         },
                         y: {
                             beginAtZero: false,
+                            min: gasMin,
+                            max: gasMax,
                             position: 'left',
                             grid: {
                                 color: 'rgba(0, 0, 0, 0.05)'
@@ -533,6 +554,8 @@
                         },
                         y1: {
                             beginAtZero: false,
+                            min: crudeMin,
+                            max: crudeMax,
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false // 只显示左侧网格
