@@ -3,6 +3,10 @@
   "unit": "美元/桶",
   "price_history": [
     {
+      "update_time": "2026-03-24 00:00:00",
+      "price": 102.76
+    },
+    {
       "update_time": "2026-03-10 00:00:00",
       "price": 90.55
     },
