@@ -7,7 +7,7 @@
 import json
 import os
 import pathlib
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import requests
 
@@ -28,25 +28,32 @@ def main():
         print("No update needed.")
         return
 
+    assert len(dates_should_update) == 1, (
+        "Historical data needs to be updated, please update manually."
+    )
+
     resp = requests.get(
-        url="https://api.oilpriceapi.com/v1/prices/past_week",
-        params={"by_code": "BRENT_CRUDE_USD", "interval": "1d"},
+        url="https://api.oilpriceapi.com/v1/prices/latest",
+        params={"by_code": "BRENT_CRUDE_USD", "by_type": "daily_average_price"},
         headers={"Authorization": f"Token {OILPRICEAPI_APIKEY}"},
     )
     resp.raise_for_status()
-    prices = resp.json()["data"]["prices"]
+    oil_data = resp.json()["data"]
 
-    update_flag = False
-    for price in prices:
-        date = datetime.fromisoformat(price["created_at"]).strftime("%Y-%m-%d 00:00:00")
-        if date not in dates_should_update:
-            continue
-        data = {
-            "update_time": date,
-            "price": price["price"],
-        }
-        crude_oil_data["price_history"].insert(0, data)
-        update_flag = True
+    date = (
+        datetime.fromisoformat(oil_data["created_at"]) + timedelta(days=1)
+    ).strftime("%Y-%m-%d 00:00:00")
+    price = oil_data["price"]
+
+    assert date in dates_should_update, (
+        "The date of the latest crude oil price does not match the date that needs to be updated."
+    )
+
+    crude_oil_data["price_history"].insert(
+        0,
+        {"update_time": date, "price": price},
+    )
+    update_flag = True
 
     if update_flag:
         with open(CRUDE_OIL_PRICE_FILE, "w", encoding="utf-8") as f:
