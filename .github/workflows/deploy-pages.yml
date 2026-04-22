@@ -1,12 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger on pushes to main branch when src/ or data/ files change
+  # Trigger on pushes to main branch when src/ files change
   push:
     branches: ["main"]
     paths:
       - "src/**"
-      - "data/**"
   # Trigger when daily data update workflow has pushed new data
   repository_dispatch:
     types: [data-updated]
