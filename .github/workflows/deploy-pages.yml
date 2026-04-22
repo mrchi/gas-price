@@ -1,18 +1,14 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger on pushes to main branch when src/ or data/ files change
+  # Trigger on pushes to main branch when src/ files change
   push:
     branches: ["main"]
     paths:
       - "src/**"
-      - "data/**"
-  # Trigger when daily data update workflow completes
-  workflow_run:
-    workflows: ["Daily Fuel Price Data Update"]
-    types:
-      - completed
-    branches: ["main"]
+  # Trigger when daily data update workflow has pushed new data
+  repository_dispatch:
+    types: [data-updated]
   # Allow manual trigger
   workflow_dispatch:
 
@@ -31,7 +27,6 @@ concurrency:
 jobs:
   # Build job
   build:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

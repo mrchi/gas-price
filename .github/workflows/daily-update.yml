@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  # Allow writing code to repository
+  # Allow writing code to repository and creating repository_dispatch events
   contents: write
 
 jobs:
@@ -56,3 +56,14 @@ jobs:
           git add data/*.json
           git commit -m "chore: auto-update gas and crude oil prices"
           git push
+
+      - name: Trigger Pages deployment
+        if: steps.git-check.outputs.changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.repos.createDispatchEvent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              event_type: 'data-updated'
+            })
