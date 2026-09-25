@@ -2,6 +2,21 @@
   "province": "北京",
   "price_history": [
     {
+      "update_time": "2026-09-25 00:00:00",
+      "gas_92": {
+        "price": 8.61,
+        "change": 0.32
+      },
+      "gas_95": {
+        "price": 9.17,
+        "change": 0.34
+      },
+      "gas_98": {
+        "price": 10.67,
+        "change": 0.34
+      }
+    },
+    {
       "update_time": "2026-09-12 00:00:00",
       "gas_92": {
         "price": 8.29,
